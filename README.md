@@ -29,7 +29,7 @@ This project is a **Lexical Analyzer 'Scanner'** implemented in C, designed to t
 
 2. Compile the program: 
     ```bash 
-    gcc * -o lexical_analyzer
+    gcc car_suivant.c erreur_lexicale.c get_lexeme.c reculer.c token_suivant.c main.c -o lexical_analyzer
 
 ### Usage 
 1. Run the compiled program
@@ -38,7 +38,7 @@ This project is a **Lexical Analyzer 'Scanner'** implemented in C, designed to t
 
 2. Enter a source code string when prompted. For example: 
     ```scss 
-    if 'x = 42' x = y+5+max;
+    if (x = 42) x = y+5+max;
 
 3. The output will display a sequence of tokens and their attributes, like: 
     ```bash 
@@ -59,13 +59,14 @@ This project is a **Lexical Analyzer 'Scanner'** implemented in C, designed to t
     <FIN, >
 
 ### Project Structure 
-    ```makefile
+   
     lexical-analyzer-c/
+    
     ├── main.c                # Main driver program
     ├── include.c             # Header and utility functions
     ├── README.md             # Project documentation
     ├── Other utility fonctions # tocken_suivant, car_suivant, reculer,get_lexeme...
-    ```
+    
 
 ### Fonctionality 
 #### Token Types 
@@ -81,9 +82,11 @@ This project is a **Lexical Analyzer 'Scanner'** implemented in C, designed to t
 
 ### Error handling 
 When an invalid character is encountered, the program outputs an error message indicating the position and the problematic character. For example:
-    ```bash 
-    position 5: the character '@' is illegal!
-
+    ``` 
+        
+    position 4: le caractère ’*’ est illégal! 
+   
+    
 
 ### Contributing
 Contributions are welcome! If you’d like to improve this project, feel free to fork the repository and submit a pull request.
@@ -94,3 +97,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ### Acknowledgments
 This project serves as a learning tool for understanding lexical analysis and compiler construction.
 Inspired by classic DFA-based tokenization techniques.
+
+
+
+
