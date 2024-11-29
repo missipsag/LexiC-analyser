@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#include "./include"
 
 enum TOKEN {FIN=0, PV, IF, EGAL, ASSIGN,OP, PARG, PARD, ID, NUM};  /* codification des tokens */
 enum CODEOPERATION {PLUS, MOINS}; /* codification des valeurs d’attribut du token OP */
